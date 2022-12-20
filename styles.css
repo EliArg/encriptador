@@ -1,0 +1,31 @@
+body {
+    background-color: lightblue;
+    font-family: "Open Sans", sans-serif;
+}
+h1 {
+    font-family: Ubuntu, sans-serif;
+}
+h1, footer {
+    text-align: center;
+}
+section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.caja-de-texto {
+    padding: 10px;
+}
+textarea {
+    max-width: 50vw;
+    min-width: 200px;
+    resize: none;
+}
+button {
+    background-color: teal;
+    border: 2px teal solid;
+    border-radius: 7px;
+    padding: 7px;
+    color: white;
+}
