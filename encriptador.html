@@ -14,17 +14,18 @@
         <h1>Encriptador de texto</h1>
     </header>
     <section>
-        <div class="caja-de-texto">
-            <textarea rows="8" cols="60"></textarea>
-            <div class="botones">
-                <button>Encriptar</button>
-                <button>Desencriptar</button>
+        <form class="caja-de-texto">
+            <textarea id="original"></textarea>
+            <div>
+                <button type="button" id="encriptador" onclick="encriptar()">Encriptar</button>
+                <button type="button" id="desencriptador" onclick="desencriptar()">Desencriptar</button>
             </div>
-        </div>
+        </form>
         <div class="caja-de-texto">
-            <textarea rows="8" cols="60"></textarea>
-            <div class="botones">
-                <button>Copiar</button>
+            <div id="resultado"></div>
+            <div>
+                <button type="button" onclick="copiar()">Copiar</button>
+                <button type="button" onclick="borrar()">Borrar</button>
             </div>
         </div>
     </section>

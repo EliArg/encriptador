@@ -12,15 +12,10 @@ section {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    align-items: center;
+    align-items: flex-start;
 }
 .caja-de-texto {
     padding: 10px;
-}
-textarea {
-    max-width: 50vw;
-    min-width: 200px;
-    resize: none;
 }
 button {
     background-color: teal;
@@ -28,4 +23,23 @@ button {
     border-radius: 7px;
     padding: 7px;
     color: white;
+}
+textarea {
+    resize: none;
+}
+#resultado {
+    background-color: azure;
+    border: 1px gray solid;
+    padding: 2px;
+    margin-bottom: 5px;
+}
+textarea, #resultado {
+    width: 400px;
+    height: 250px;
+}
+@media (max-width: 400px) {
+    textarea, #resultado {
+        width: 300px;
+        height: 200px;
+    }
 }
