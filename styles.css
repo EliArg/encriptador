@@ -30,7 +30,7 @@ textarea {
 #resultado {
     background-color: azure;
     border: 1px gray solid;
-    padding: 5px;
+    padding: 2px;
     margin-bottom: 5px;
 }
 textarea, #resultado {

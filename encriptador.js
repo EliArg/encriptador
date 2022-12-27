@@ -33,6 +33,10 @@ function desencriptar() {
     document.getElementById("resultado").innerHTML = desencriptada;
 }
 function copiar() {
-    console.log("copia")
+    let copia = document.getElementById("resultado").innerHTML;
+    navigator.clipboard.writeText(copia);
+}
+function borrar() {
+    document.getElementById("resultado").innerHTML = ""
 }
 
