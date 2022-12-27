@@ -1,6 +1,5 @@
 function encriptar() {
-    let frase = document.getElementById("original").value;
-    frase.toLowerCase();
+    let frase = document.getElementById("original").value.toLowerCase();
     const letras = frase.split("");
     let encriptando = [];
     for (i = 0; i < letras.length; i++) {
@@ -26,13 +25,12 @@ function encriptar() {
             }}
     let encriptada = encriptando.toString();
     encriptada = encriptada.replaceAll(",", "");
-    console.log(encriptada);
+    document.getElementById("resultado").innerHTML = encriptada;
 }
 function desencriptar() {
-    let frase = document.getElementById("original").value;
-    frase.toLowerCase();
+    let frase = document.getElementById("original").value.toLowerCase();
     let desencriptada = frase.replaceAll("ai", "a").replaceAll("enter", "e").replaceAll("imes", "i").replaceAll("ober", "o").replaceAll("ufat", "u");
-    console.log(desencriptada);
+    document.getElementById("resultado").innerHTML = desencriptada;
 }
 function copiar() {
     console.log("copia")
